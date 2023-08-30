@@ -14,6 +14,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 *,
@@ -23,10 +24,81 @@ html {
 }
 body {
     font-family: "Open Sans", "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .wrapper {
     max-width: 1198px;
     width: calc(100vw - 46px);
     margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-group {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 11.38px;
+}
+.navigation-list {
+    display: flex;
+    gap: 20px;
+}
+.list-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+.list-link:hover {
+    color: var(--color-primary);
+}
+
+.btn {
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 11px 25px 13px;
+}
+.btn:active {
+    scale: 0.98;
+}
+.btn-bordered {
+    background: none;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-border);
+}
+.btn-bordered:hover {
+    background-color: var(--color-border);
+}
+.btn-colored {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+.btn-colored:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
