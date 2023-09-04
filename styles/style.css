@@ -37,6 +37,13 @@ body {
     margin: 0 auto;
 }
 
+.section-title {
+    color: var(--color-text);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .header {
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
     padding-top: 15px;
@@ -116,10 +123,8 @@ body {
     padding-right: 90px;
 }
 .promo__title {
-    color: var(--color-text);
     font-family: "Poppins";
     font-size: 4.4rem;
-    font-weight: 700;
     line-height: 54px;
     margin-bottom: 30px;
 }
@@ -150,4 +155,63 @@ body {
 }
 .video-link > a:hover {
     color: var(--color-hover);
+}
+
+/* Tools section */
+.tools__wrapper {
+    background-image: url(../img/tools-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 90px;
+}
+.tools__title {
+    text-align: center;
+    width: 462px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.layout-4-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.tool__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.tool:nth-child(1) > .tool__icon {
+    background: #7752be;
+}
+.tool:nth-child(2) > .tool__icon {
+    background: #fab005;
+}
+.tool:nth-child(3) > .tool__icon {
+    background: #f03e3d;
+}
+.tool:nth-child(4) > .tool__icon {
+    background: #4dadf7;
+}
+
+.tool__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.tool__text {
+    color: var(--color-subtitle);
+}
+.tools-btn {
+    margin: 60px auto 0;
+    display: block;
+}
+
+.strategies {
+    height: 500px;
 }
