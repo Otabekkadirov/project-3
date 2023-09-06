@@ -212,6 +212,73 @@ body {
     display: block;
 }
 
+/* Strategies start */
 .strategies {
-    height: 500px;
+    /* height: 500px; */
+}
+.strategies__title {
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+.strategies__text {
+    margin-bottom: 24px;
+}
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+}
+.tag {
+    color: var(--color-subtitle);
+    font-size: 13px;
+    line-height: 28px;
+    border-radius: 90px;
+
+    cursor: pointer;
+    padding: 0 14px;
+    display: block;
+}
+.tag-colored {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-light);
+}
+.tag-bordered {
+    border: 1px solid var(--color-tag-border);
+    background-color: var(--color-light);
+}
+.tag-grey {
+    background-color: var(--color-tag-grey);
+}
+.tag:hover {
+    filter: brightness(95%);
+}
+
+.strategies__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 31px;
+    row-gap: 30px;
+}
+.card {
+    width: 377px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    /* flex-shrink: 0; */
+    /* flex-grow: 1; */
+}
+
+.card:nth-child(4) {
+    /* flex-grow: 2; */
+}
+.card__content {
+    padding: 24px 33px 26px;
+}
+.card__title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 29px;
 }
