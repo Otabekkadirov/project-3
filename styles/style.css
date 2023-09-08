@@ -119,6 +119,9 @@ body {
     display: flex;
     align-items: center;
 }
+.layout-2-column > * {
+    flex-basis: 50%;
+}
 .promo__content {
     padding-right: 90px;
 }
@@ -214,8 +217,9 @@ body {
 
 /* Strategies start */
 .strategies {
-    /* height: 500px; */
+    padding-bottom: 96px;
 }
+
 .strategies__title {
     margin-top: 30px;
     margin-bottom: 14px;
@@ -263,15 +267,16 @@ body {
     row-gap: 30px;
 }
 .card {
-    width: 377px;
+    width: 30%;
     border-radius: 8px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
     overflow: hidden;
-    /* flex-shrink: 0; */
-    /* flex-grow: 1; */
+}
+.box-shadow {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 .card:nth-child(4) {
+    width: 787px;
     /* flex-grow: 2; */
 }
 .card__content {
@@ -281,4 +286,80 @@ body {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 29px;
+}
+
+/* About section */
+.about {
+    margin-bottom: 100px;
+}
+.about__title {
+    margin-bottom: 14px;
+}
+.about__text {
+    color: var(--color-subtitle);
+    margin-bottom: 45px;
+}
+.about__employees {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.employee {
+    flex-basis: 30%;
+    padding: 36px 35px 34px;
+    border-radius: 10px;
+    position: relative;
+}
+.employee__name {
+    color: var(--color-subtitle);
+    font-weight: 700;
+}
+.employee__job {
+    color: var(--color-subtitle);
+    font-size: 1.4rem;
+}
+.employee__email {
+    color: var(--color-link);
+    font-family: inherit;
+    font-size: 1.4rem;
+}
+.employee__pic {
+    position: absolute;
+    top: 10px;
+    right: -72px;
+}
+
+/* Contact section */
+.contact {
+    padding: 62px 0 90px;
+    background-color: #ffeee1;
+}
+.contact__title {
+    margin-bottom: 17px;
+}
+.contact__text {
+    color: var(--color-subtitle);
+    margin-bottom: 33px;
+}
+
+.contact__wrapper > .layout-2-column {
+    gap: 100px;
+    align-items: flex-start;
+}
+.contact__info > a {
+    color: var(--color-subtitle);
+    font-family: inherit;
+    font-size: 2.5rem;
+    line-height: 26px;
+    display: block;
+    margin-bottom: 19px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    padding-left: 36px;
+}
+.contact__number {
+    background-image: url(../img/ico_phone.svg);
+}
+.contact__email {
+    background-image: url(../img/ico_mail.svg);
 }
